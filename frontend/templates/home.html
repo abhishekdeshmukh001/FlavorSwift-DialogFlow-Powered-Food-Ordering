@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>FlavorSwift - Your Ultimate Food Experience</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>FlavorSwift</h1>
+            <nav>
+                <a href="#home">HOME</a> |
+                <a href="#menu">MENU</a> |
+                <a href="#location">LOCATION</a> |
+                <a href="#aboutus">ABOUT US</a> |
+                <a href="#contactus">CONTACT US</a>
+            </nav>
+        </header>
+
+        <section id="home">
+            <img src="../menu items/banner.jpg" alt="Banner Image">
+        </section>
+
+        <section id="menu">
+            <h2>Our Menu</h2>
+            <div class="grid-container">
+                <div class="menu-item">
+                    <img src="../menu items/samosa.jpg" alt="Samosa">
+                    <p class="food-name">Samosa</p>
+                    <p class="food-price">$ 5</p>
+                </div>
+                <div class="menu-item">
+                    <img src="../menu items/pav_bhaji.jpg" alt="Pav Bhaji">
+                    <p class="food-name">Pav Bhaji</p>
+                    <p class="food-price">$ 6</p>
+                </div>
+                <div class="menu-item">
+                    <img src="../menu items/chole_bhature.jpg" alt="Chole Bhature">
+                    <p class="food-name">Chole Bhature</p>
+                    <p class="food-price">$ 7</p>
+                </div>
+                <!-- Repeat similar structure for other menu items -->
+                <div class="menu-item">
+                    <img src="../menu items/mango_lassi.jpg" alt="Mango Lassi">
+                    <p class="food-name">Mango Lassi</p>
+                    <p class="food-price">$ 5</p>
+                </div>
+                <div class="menu-item">
+                    <img src="../menu items/md_2.jpg" alt="Masala Dosa">
+                    <p class="food-name">Masala Dosa</p>
+                    <p class="food-price">$ 6</p>
+                </div>
+                <div class="menu-item">
+                    <img src="../menu items/rava_dosa.jpg" alt="Rava Dosa">
+                    <p class="food-name">Rava Dosa</p>
+                    <p class="food-price">$ 7</p>
+                </div>
+                <div class="menu-item">
+                    <img src="../menu items/biryani_@.jpg" alt="Biryani">
+                    <p class="food-name">Biryani</p>
+                    <p class="food-price">$ 9</p>
+                </div>
+                <div class="menu-item">
+                    <img src="../menu items/pizza_2.jpg" alt="Pizza">
+                    <p class="food-name">Pizza</p>
+                    <p class="food-price">$ 8</p>
+                </div>
+                <div class="menu-item">
+                    <img src="../menu items/vp_2.jpg" alt="Vadapav">
+                    <p class="food-name">Vadapav</p>
+                    <p class="food-price">$ 4</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="location">
+            <h2>Location</h2>
+            <p>12/13, MD Street, Bangalore</p>
+            <!-- Add map widget here -->
+        </section>
+
+        <section id="contactus">
+            <h2>Contact Us</h2>
+            <p>Got questions? Want to place an order? Call us at +91791234567 or email us at info@flavorswift.com</p>
+        </section>
+
+        <iframe class="chatbot" width="280" height="340" allow="microphone;"
+            src="https://console.dialogflow.com/api-client/demo/embedded/eac16f0d-1b7d-4655-90dd-13ee11f8384c"></iframe>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 FlavorSwift - Your Ultimate Food Experience</p>
+    </footer>
+
+    <script>
+        var chatbot = document.querySelector('.chatbot');
+
+        window.addEventListener('scroll', function () {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                chatbot.classList.remove('show');
+            } else {
+                chatbot.classList.add('show');
+            }
+        });
+
+        window.addEventListener('scroll', function () {
+            if (window.innerHeight + window.scrollY >= document.body.offsetHeight) {
+                chatbot.classList.add('show');
+            }
+        });
+    </script>
+
+
+</body>
+
+</html>

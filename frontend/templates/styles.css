@@ -1,0 +1,147 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffe0b2;
+    /* Light Orange Theme */
+    text-align: center;
+}
+
+header {
+    background-color: #ff5733;
+    text-align: center;
+    padding: 20px;
+    color: #fff;
+    width: 100%;
+    /* Make the header entire width */
+    box-sizing: border-box;
+    /* Include padding in the width */
+    margin: 0;
+    /* Remove default margin */
+    transition: background-color 0.3s ease-in-out;
+}
+
+header:hover {
+    background-color: #d9534f;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 36px;
+}
+
+nav {
+    width: 100%;
+    /* Make the navbar entire width */
+    box-sizing: border-box;
+    /* Include padding in the width */
+}
+
+nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+    color: #f0f0f0;
+}
+
+/* Adjust the banner to fill the entire width */
+#home img {
+    width: 100%;
+    height: auto;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0 20px;
+    /* Adding 20px of padding */
+}
+
+section {
+    margin: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    color: #ff5733;
+    font-size: 24px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
+.menu-item {
+    text-align: center;
+}
+
+.menu-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.food-name {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.food-price {
+    font-size: 16px;
+    color: #ff5733;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #ff5733;
+    text-align: center;
+    padding: 20px;
+    color: #fff;
+    transition: background-color 0.3s ease-in-out;
+}
+
+footer:hover {
+    background-color: #d9534f;
+}
+
+/* Add this style to make the chatbot hidden by default */
+.chatbot {
+    position: fixed;
+    right: 20px;
+    bottom: -300px;
+    border: none;
+    z-index: 1000;
+    transition: bottom 0.3s ease-in-out;
+}
+
+.chatbot.show {
+    bottom: 20px;
+}
+
+
+
+.container {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0 20px;
+}
+
+section img {
+    display: block;
+    margin: auto;
+    width: 100%;
+    height: auto;
+}
